@@ -66,11 +66,13 @@
 
 
 // // // REAL LIFE ANALOGY
-// // // if you have different days of the week (cases), and you want to do something
-// // //  specific on each day, you'd use a switch statement to perform different actions
+// // // if you have different days of the week (cases), and you want to do 
+// something
+// // //  specific on each day, you'd use a switch statement to perform different
+//  actions
 // // //   based on the current day.
 
-let day = monday
+let day = "tuesday"
 
 switch (day) {
   case "monday":
@@ -83,5 +85,5 @@ switch (day) {
   default:
     console.log("Enjoy your day!");
 }
-// // // This switch statement checks the day variable and performs different actions based on which day 
-// // // it is. For each day (case), it executes specific code.
+// // // This switch statement checks the day variable and performs different 
+// actions based on which day it is. For each day (case), it executes specific code.
