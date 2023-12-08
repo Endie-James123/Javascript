@@ -14,5 +14,5 @@ if (yearOfBirth >= 1922 && yearOfBirth <= 1927) {
 } else if (yearOfBirth >= 1997 && yearOfBirth <= 2012) {
   console.log("You belong to the Gen Z Generation.");
 } else {
-  console.log(`You're a small boy of ${2023 - yearOfBirth}`);
+  console.log(`You're a very small boy of ${2023 - yearOfBirth}`);
 }
