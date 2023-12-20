@@ -1,13 +1,13 @@
 // // // // SWITCH STATEMENTS
 // // Switch statements are control flow structures in programming languages that
-//  allow a program to perform different actions based on the value of a variable 
-//  or expression. They provide an organized way to execute different code blocks 
+//  allow a program to perform different actions based on the value of a variable
+//  or expression. They provide an organized way to execute different code blocks
 //  depending on the evaluated value of a single variable or expression.
 
 // // Key Components of Switch Statements:
 // // Selector or Expression or variable:
 
-// // The switch statement begins with an expression or variable called the 
+// // The switch statement begins with an expression or variable called the
 // "selector". This value is evaluated against different cases.
 // // Cases:
 
@@ -20,12 +20,12 @@
 // // Break Statements:
 
 // // Within each case block, a break statement is used to exit the switch statement
-//  after executing the code for the matched case. This prevents the execution of 
+//  after executing the code for the matched case. This prevents the execution of
 //  subsequent case blocks.
 // // Default Case (Optional):
 
-// // A default case is provided as a catch-all in case none of the specified cases 
-// match the selector's value. It's optional and executes when there is no exact 
+// // A default case is provided as a catch-all in case none of the specified cases
+// match the selector's value. It's optional and executes when there is no exact
 // match.
 
 // // // // Explaining Switch Statements:
@@ -64,26 +64,27 @@
 // // // default: If none of the cases match the selector, the code inside the default
 // // //  block runs.
 
-
 // // // REAL LIFE ANALOGY
-// // // if you have different days of the week (cases), and you want to do 
+// // // if you have different days of the week (cases), and you want to do
 // something
 // // //  specific on each day, you'd use a switch statement to perform different
 //  actions
 // // //   based on the current day.
 
-let day = "tuesday"
+// let day = "tuesday"
 
-switch (day) {
-  case "monday":
-    console.log("Let's start the week!");
-    break;
-  case "tuesday":
-    console.log("Time for some tasks!");
-    break;
-  // Other days...
-  default:
-    console.log("Enjoy your day!");
-}
-// // // This switch statement checks the day variable and performs different 
+// switch (day) {
+//   case "monday":
+//     console.log("Let's start the week!");
+//     break;
+//   case "tuesday":
+//     console.log("Time for some tasks!");
+//     break;
+//   // Other days...
+//   default:
+//     console.log("Enjoy your day!");
+// }
+// // // This switch statement checks the day variable and performs different
 // actions based on which day it is. For each day (case), it executes specific code.
+
+
