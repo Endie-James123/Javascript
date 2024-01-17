@@ -1,6 +1,6 @@
-// for (let i = 1; i <= 20; i++) {
-//   console.log(i);
-// }
+ for (let i = 1; i <= 20; i++) {
+  console.log(i);
+ }
 
 // for (let i = 10; i >= 1; i--) {
 //     console.log(i);
@@ -20,6 +20,3 @@
 //   return currentYear - yearOfBirth;
 // }
 // console.log(subtract(2023, 2005));
-const callBirthYear =() =>{
-  
-}

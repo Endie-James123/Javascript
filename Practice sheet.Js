@@ -13,4 +13,3 @@ let matrixSolution =matrixValues[0][0] * matrixValues[1][0];
 console.log(matrixSolution);*/
 
 
-
