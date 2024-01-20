@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+      }
+      .container {
+        width: 300px;
+        text-align: center;
+        padding: 10px;
+        padding-bottom: 30px;
+        /* New method of Centering a div */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        box-shadow: 0 1px 10px ;
+      }
+      h1{
+        text-shadow: 1px 1px rgb(214, 108, 108);
+      }
+      button{
+        display: block;
+        margin: auto;
+        margin-top: 17px;
+        padding: 5px;
+        width: 80px;
+        background-color: black;
+        color: white;
+        box-shadow: 1px 1px white;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Log In Form</h1>
+      <form>
+        <label for="Username">Username:</label>
+        <input type="text" id="Username" required /><br /><br />
+        <label for="Password">Password:</label>
+        <input type="password" id="Password" required />
+        <button onclick="validateInput()">Submit</button>
+      </form>
+    </div>
+    <script>
+        function validateInput() {
+            let userInput = document.getElementById('Username').value
+            if (userInput.length <=5 || userInput.length >=15) {
+                alert('Users Input must not be less than 5 characters and not more than 15 characters')
+                
+            }else{
+                alert('User Input submitted successfully')
+            }
+        }
+    </script>
+  </body>
+</html>

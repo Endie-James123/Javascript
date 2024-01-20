@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        width: 300px;
+        text-align: center;
+        border: 3px solid black;
+        margin: auto;
+      }
+      button {
+        display: block;
+        padding: 7px;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Favorite Sports</h2>
+      <div class="childDiv">
+        <button id="BasketBall" onclick="forBasketBall()">BasketBall</button>
+        <button id="Hockey">Hockey</button>
+        <button id="Driving" onclick="forDriving()">Driving</button>
+        <button id="skyDiving">Sky diving</button>
+        <button id="Football">Football</button>
+      </div>
+    </div>
+    <script>
+        //The 2 different methods to add event listeners
+
+        //Method 1
+        function forBasketBall() {
+            document.getElementById('BasketBall').style.backgroundColor = 'yellow'
+            alert('Basketball is clicked')
+        }
+        function forDriving() {
+            document.getElementById('Driving').style.backgroundColor = 'yellow'
+            alert('Driving is clicked')
+        }
+        // Method 2
+        let Hockey = document.getElementById('Hockey')
+        function Hockeyfunction() {
+            Hockey.style.backgroundColor = 'blue'
+            alert('You Hovered on Hockey') 
+        }
+        Hockey.addEventListener('mouseover', Hockeyfunction)
+    </script>
+  </body>
+</html>
