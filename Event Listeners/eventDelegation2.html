@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      ul {
+        list-style: none;
+        border: 3px solid black;
+        width: 250px;
+        margin: auto;
+        padding: 20px;
+        text-align: center;
+      }
+      li {
+        padding: 5px;
+        border: 3px solid black;
+        margin: 4px;
+      }
+      button {
+        padding: 3px;
+        width: 100px;
+        background-color: white;
+        border: 1px solid gray;
+      }
+      button:hover {
+        background-color: black;
+        font-weight: bold;
+        color: white;
+        transition: 0.3s;
+      }
+    </style>
+  </head>
+  <body>
+    <ul id="Sports">
+      <li id="Football">Football</li>
+      <li id="Hockey">Hockey</li>
+      <li id="BasketBall">BasketBall</li>
+      <li id="Racing">Racing</li>
+      <button id="btn">click to add</button>
+    </ul>
+    <script>
+      //Using Event Delegation to get an element and also assign an event listener to it at the same time.
+      document.querySelector("#Sports").addEventListener("click", function (e) {
+        e.target.style.backgroundColor = "blue";
+        console.log(e.target.innerText + " is clicked");
+      });
+      //Adding an li element to the ul with id=Sports
+      const sports = document.querySelector("#Sports");
+      const addli = document.createElement("li");
+      //Setting the created li to be Karate
+      addli.innerText = "Karate";
+      //Adding it to the ul
+      sports.appendChild(addli);
+      //Added a button which on click creates another sport element
+      document.getElementById("btn").addEventListener("click", function () {
+        const addEle = document.createElement("li")
+        addEle.innerText = prompt('What Sport do you want to add?')
+        sports.appendChild(addEle);
+      });
+    </script>
+  </body>
+</html>

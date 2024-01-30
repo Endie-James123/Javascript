@@ -1,1 +1,26 @@
-You can write multiple lines using \n
+Math Methods
+Math.ceil() round up a decimal to the nearest integer
+E.g Math.ceil(11.04) = 12
+
+
+Math.floor() round down a decimal to the nearest integer
+E.g Math.floor(11.04) = 11
+
+Math.random() returns a random number between 0 (inclusive), and 1 (exclusive).
+You can also get a random number between 0 and other numbers
+E.g to get a random number between 0 and 3
+Math.random() * 3
+it'll give you a random number between 0 and 3(exclusive)
+
+Functions()
+
+A JavaScript Function is a block of code designed to perform a particular task when it's being called.
+
+
+Arrays []
+An Array is a collection of different data types 
+Array Index is the location of a value in a array. It is similar to a street number.
+Length is an array Property that returns the number of elements you have in a given array.
+ 
+ Objects {}
+ An object can be accessed in two ways, the dot(.) notation and the bracket(['']) notation 

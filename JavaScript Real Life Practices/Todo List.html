@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: gray;
+        color: white;
+      }
+      #container {
+        width: 300px;
+        border: 2px solid grey;
+        color: white;
+        font-weight: bold;
+        margin: auto;
+        padding: 10px;
+        height: auto;
+        margin-top: 100px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px 1px white;
+      }
+      h2 {
+        font-family: fantasy;
+        color: black;
+        text-shadow: 1px 1px white;
+        padding: 10px 0px;
+        text-align: center;
+      }
+      ol {
+        padding: 22px;
+      }
+      li {
+        margin: 5px;
+        display: flex;
+        justify-content: space-between;
+      }
+      #userinput {
+        margin-left: 25px;
+        padding: 5px;
+        border-radius: 3px;
+        background-color: rgb(209, 206, 206);
+        font-weight: bold;
+      }
+      button {
+        padding: 5px;
+        background: transparent;
+        color: black;
+        border-radius: 3px;
+        font-weight: bold;
+      }
+      button:hover {
+        background-color: black;
+        color: white;
+        transition: 0.5s;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <h2>To-Do List</h2>
+      <input type="text" id="userinput" />
+      <button id="addbutton">Add Task</button>
+      <ol id="orderedlist"></ol>
+    </div>
+    <script>
+      //My Variables
+      const userdata = document.getElementById("userinput");
+      const addBtn = document.getElementById("addbutton");
+      const list = document.getElementById("orderedlist");
+
+      //Functions
+      addBtn.addEventListener("click", function () {
+        //This prevent user from adding tasksitem of more than 15 characters 
+        if (userdata.value.length > 15) {
+          alert("Task input must not be more than 15 characters!");
+          userdata.value = ''
+        } 
+        //This add the taskslist item
+        else if (userdata.value !== "") {
+          const newli = document.createElement("li");
+          newli.innerText = userdata.value;
+          list.appendChild(newli);
+          userdata.value = "";
+          //Created the delete button
+          const deletebtn = document.createElement("button");
+          deletebtn.innerText = "Delete";
+          newli.appendChild(deletebtn);
+          //Created the edit button
+          const editBtn = document.createElement('button')
+          editBtn.innerText = 'Edit'
+          newli.appendChild(editBtn)
+          //This function is for the delete button (Arrow func)
+          deletebtn.onclick = () => list.removeChild(newli)
+          editBtn.onclick = function(){
+            // let userdata = newli.firstChild.nodeValue.trim()
+            // let edited = prompt('edit task', newli)
+            // if (edited !== null){
+            //   newli.firstChild.nodeValue = newli*/
+            // }
+            newli.innerText = prompt('edit task')
+          }
+        }
+        //This prevents the user from inputing an empty task
+        else {
+          alert("Please Input Task!");
+        }
+
+      });
+    </script>
+  </body>
+</html>
