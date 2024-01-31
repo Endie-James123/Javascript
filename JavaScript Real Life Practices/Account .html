@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="Fb login page.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facebook.com</title>
+    <style>
+      h1 {
+        color: blue;
+        text-align: center;
+      }
+      h4 {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      input {
+        border-color: rgb(63, 55, 55);
+        border-radius: 2%;
+        padding: 7px;
+        width: 250px;
+        border-width: 1px;
+      }
+      div {
+        margin: 30px;
+        text-align: center;
+      }
+      button {
+        width: 268px;
+        height: 30px;
+        border-radius: 4px;
+        color: white;
+        font-weight: bolder;
+      }
+      button.lg {
+        background-color: rgb(56, 56, 228);
+      }
+      button.cna {
+        background-color: green;
+      }
+      body {
+        background-color: rgb(231, 230, 229);
+      }
+      hr {
+        width: 300px;
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>facebook</h1>
+    <hr />
+    <h4>sign up or login</h4>
+    <form>
+      <div>
+        <input type="text" placeholder="Email or phone number"  id="Email&Phone"/><br /><br />
+        <input type="password" placeholder="Password"  id="Password"/><br /><br />
+        <button class="lg">login</button><br /><br />
+        <a href="">forgotten password</a><br />
+        <p>____________or_____________</p>
+        <button class="cna">create new account</button>
+      </div>
+    </form>
+    <script>
+        //Variables 
+        const emailOrNum = document.getElementById('Email&Phone')
+        const password = document.getElementById('Password')
+        const loginBtn = document.getElementsByClassName('lg')
+    </script>
+  </body>
+</html>
